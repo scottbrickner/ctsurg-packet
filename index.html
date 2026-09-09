@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="description" content="Orientation packet for experienced nurses new to cardiothoracic surgical critical care.">
+<title>Cardiothoracic ICU Welcome Packet</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>html,body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+:root{
+  --ground:#F7F5F2;
+  --surface:#FFFFFF;
+  --surface-2:#F1EDE8;
+  --ink:#2C2C2C;
+  --ink-soft:#5A5A5A;
+  --ink-faint:#8E8B86;
+  --rule:#E0DDD7;
+  --rule-faint:#EDE9E4;
+  --accent:#990000;
+  --accent-deep:#6B0000;
+  --accent-soft:#F8E5E5;
+  --gold:#C79A00;
+  --gold-bar:#FFCC00;
+  --gold-soft:#FFF6D9;
+  --alert:#B00C25;
+  --alert-soft:#FBE7EB;
+  --caution:#9A6208;
+  --caution-soft:#FDF3E1;
+  --calm:#1F6B4C;
+  --calm-soft:#E8F3ED;
+  --shadow:0 1px 2px rgba(44,44,44,.05), 0 8px 24px -16px rgba(44,44,44,.28);
+  --display:"Open Sans","Segoe UI",system-ui,sans-serif;
+  --body:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+  --measure:68ch;
+  --pad:clamp(20px,4vw,44px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#16120F;
+    --surface:#1F1A17;
+    --surface-2:#282120;
+    --ink:#EFEAE4;
+    --ink-soft:#B7ADA4;
+    --ink-faint:#8B8078;
+    --rule:#37302B;
+    --rule-faint:#282220;
+    --accent:#E8867C;
+    --accent-deep:#F3A79F;
+    --accent-soft:#35201D;
+    --gold:#E8BE4E;
+    --gold-bar:#E8BE4E;
+    --gold-soft:#2E2611;
+    --alert:#FF8090;
+    --alert-soft:#331519;
+    --caution:#E8A64A;
+    --caution-soft:#2E2413;
+    --calm:#6ECB9F;
+    --calm-soft:#12271E;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 26px -18px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#16120F;
+  --surface:#1F1A17;
+  --surface-2:#282120;
+  --ink:#EFEAE4;
+  --ink-soft:#B7ADA4;
+  --ink-faint:#8B8078;
+  --rule:#37302B;
+  --rule-faint:#282220;
+  --accent:#E8867C;
+  --accent-deep:#F3A79F;
+  --accent-soft:#35201D;
+  --gold:#E8BE4E;
+  --gold-bar:#E8BE4E;
+  --gold-soft:#2E2611;
+  --alert:#FF8090;
+  --alert-soft:#331519;
+  --caution:#E8A64A;
+  --caution-soft:#2E2413;
+  --calm:#6ECB9F;
+  --calm-soft:#12271E;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 26px -18px rgba(0,0,0,.9);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:var(--accent);text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+
+/* ---------- shell ---------- */
+.rail{position:fixed;inset:0 auto 0 0;width:4px;background:var(--accent);z-index:20}
+.wrap{max-width:1020px;margin:0 auto;padding:0 var(--pad) 96px calc(var(--pad) + 4px)}
+
+/* ---------- masthead ---------- */
+.masthead{padding:clamp(40px,7vw,76px) 0 30px}
+.eyebrow{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0}
+.eyebrow .div{color:var(--ink-faint);padding:0 .5em}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,6.2vw,58px);line-height:1.04;letter-spacing:-.02em;margin:18px 0 0;text-wrap:balance;max-width:16ch}
+h1 em{font-style:normal;color:var(--accent)}
+.deck{font-size:clamp(17px,2.1vw,20px);line-height:1.5;color:var(--ink-soft);max-width:56ch;margin:20px 0 0}
+.meta{display:flex;flex-wrap:wrap;gap:0 28px;margin:30px 0 0;padding:16px 0 0;border-top:1px solid var(--rule)}
+.meta div{display:flex;flex-direction:column;gap:2px;padding:6px 0}
+.meta dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.meta dd{margin:0;font-size:14px;font-weight:600}
+
+/* ---------- nav ---------- */
+.toc{position:sticky;top:0;z-index:15;background:var(--ground);border-bottom:1px solid var(--rule);margin:0 0 8px}
+.toc-in{display:flex;gap:2px;overflow-x:auto;scrollbar-width:thin;padding:9px 0}
+.toc a{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;padding:6px 11px;border-radius:3px;white-space:nowrap;transition:background .15s,color .15s}
+.toc a:hover{background:var(--accent-soft);color:var(--accent)}
+
+/* ---------- sections ---------- */
+section{padding:46px 0 0;scroll-margin-top:60px}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-top:2px solid var(--ink);padding-top:12px;margin-bottom:8px}
+.sec-num{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.08em;flex:none}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(23px,3.3vw,31px);line-height:1.12;letter-spacing:-.015em;margin:0;text-wrap:balance}
+.sec-sub{color:var(--ink-soft);max-width:var(--measure);margin:10px 0 0;font-size:15.5px}
+h3{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.25;letter-spacing:-.01em;margin:38px 0 0;text-wrap:balance}
+h4{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:26px 0 0}
+p{max-width:var(--measure);margin:12px 0 0}
+.lede{font-size:17px;color:var(--ink)}
+ul,ol{max-width:var(--measure);margin:12px 0 0;padding-left:1.15em}
+li{margin:6px 0}
+li::marker{color:var(--accent)}
+strong{font-weight:700}
+.q{font-family:var(--mono);font-size:.92em;font-weight:500;background:var(--surface-2);border:1px solid var(--rule);border-radius:3px;padding:.08em .38em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.q-hot{background:var(--accent-soft);border-color:transparent;color:var(--accent);font-weight:600}
+
+/* ---------- grids ---------- */
+.grid{display:grid;gap:14px;margin-top:20px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(268px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(212px,1fr))}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:16px 17px;display:flex;flex-direction:column;gap:7px}
+.card .name{font-family:var(--display);font-weight:700;font-size:15.5px;line-height:1.25;margin:0}
+.abbr{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+td.drug .abbr{display:inline-block;font-size:9.5px;font-weight:400;margin-top:2px}
+.card p{margin:0;font-size:14px;line-height:1.5;color:var(--ink-soft);max-width:none}
+.card .watch{margin-top:auto;padding-top:9px;border-top:1px solid var(--rule-faint);font-size:13px;line-height:1.45}
+.card .watch b{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:3px;font-weight:600}
+
+
+/* ---------- rx spec rows ---------- */
+.rx{display:grid;gap:10px;margin-top:20px}
+.rx-row{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:14px 16px;display:grid;grid-template-columns:172px 1fr;gap:8px 20px;align-items:start}
+.rx-row.restricted{background:var(--gold-soft);border-color:transparent;box-shadow:inset 3px 0 0 var(--gold-bar)}
+.rx-name{font-family:var(--display);font-weight:700;font-size:15px;line-height:1.25}
+.rx-name .abbr{display:block;font-weight:400;margin-top:2px}
+.rx-name .flag{margin-top:5px}
+.rx-spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(146px,1fr));gap:10px 18px;margin:0}
+.rx-spec>div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.rx-spec dt{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint)}
+.rx-spec dd{margin:0;font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums;line-height:1.4;overflow-wrap:anywhere}
+.rx-note{grid-column:2;margin:2px 0 0;font-size:13px;line-height:1.45;color:var(--ink-soft);max-width:none;padding-top:8px;border-top:1px solid var(--rule-faint)}
+@media (max-width:720px){
+  .rx-row{grid-template-columns:1fr;gap:10px}
+  .rx-note{grid-column:1}
+}
+
+/* ---------- tables: never scroll sideways ---------- */
+
+.scroller{margin-top:20px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);overflow:hidden}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--rule-faint);vertical-align:top}
+thead th{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2);border-bottom:1px solid var(--rule);position:sticky;top:0}
+tbody tr:last-child td{border-bottom:none}
+td.n,th.n{font-family:var(--mono);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+tbody td:last-child{font-size:12.5px;line-height:1.4;min-width:150px}
+td.drug{font-weight:700;font-family:var(--display)}
+tr.flip td{background:var(--gold-soft)}
+tr.flip td.drug,tr.flip td:first-child{box-shadow:inset 3px 0 0 var(--gold-bar)}
+.flag{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);display:block;margin-top:3px}
+.tnote{font-size:12.5px;color:var(--ink-faint);margin-top:9px;max-width:var(--measure)}
+
+
+@media (max-width:720px){
+  .scroller{border:none;background:none;border-radius:0}
+  table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  table tbody tr{display:block;background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:12px 14px;margin-bottom:10px}
+  table tbody tr.flip{background:var(--gold-soft);border-color:transparent;box-shadow:inset 3px 0 0 var(--gold-bar)}
+  table tbody tr.flip td,table tbody tr.flip td.drug{background:none;box-shadow:none}
+  table tbody td{display:grid;grid-template-columns:96px 1fr;gap:4px 12px;border:none;padding:5px 0;font-size:13.5px}
+  table tbody td::before{content:attr(data-label);font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);padding-top:3px}
+  table tbody td.drug{display:block;font-family:var(--display);font-size:15px;padding-bottom:8px;margin-bottom:4px;border-bottom:1px solid var(--rule-faint)}
+  table tbody td.drug::before{content:none}
+  table tbody tr:last-child td{border-bottom:none}
+  tbody td:last-child{min-width:0}
+}
+
+/* ---------- callouts ---------- */
+.call{margin-top:22px;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--ink-faint);border-radius:0 6px 6px 0;padding:15px 18px}
+.call.stop{border-left-color:var(--alert);background:var(--alert-soft)}
+.call.watch{border-left-color:var(--gold-bar);background:var(--gold-soft)}
+.call.key{border-left-color:var(--accent);background:var(--accent-soft)}
+.call .lbl{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin:0 0 5px;max-width:none}
+.call.stop .lbl{color:var(--alert)}
+.call.watch .lbl{color:var(--caution)}
+.call.key .lbl{color:var(--accent)}
+.call p{margin:0;font-size:14.5px;max-width:none}
+.call p + p{margin-top:9px}
+.call ul{margin:8px 0 0;max-width:none;font-size:14.5px}
+
+/* ---------- ladder / timeline ---------- */
+.steps{list-style:none;padding:0;margin:20px 0 0;max-width:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--rule-faint);margin:0}
+.steps li:first-child{border-top:1px solid var(--rule)}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);padding-top:3px;font-variant-numeric:tabular-nums}
+.steps .st{grid-column:2;font-family:var(--display);font-weight:700;font-size:15px;line-height:1.3}
+.steps .sd{grid-column:2;font-size:14px;color:var(--ink-soft);line-height:1.5;margin-top:3px}
+
+.pod{display:grid;gap:0;margin-top:20px}
+.pod-row{display:grid;grid-template-columns:132px 1fr;gap:18px;padding:15px 0;border-top:1px solid var(--rule)}
+.pod-row:last-child{border-bottom:1px solid var(--rule)}
+.pod-when{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding-top:2px}
+.pod-when span{display:block;color:var(--ink-faint);font-weight:400;letter-spacing:.04em;text-transform:none;margin-top:3px;font-size:11px}
+.pod-body ul{margin:0;font-size:14.5px}
+.pod-body li{margin:5px 0}
+@media (max-width:620px){.pod-row{grid-template-columns:1fr;gap:6px}}
+
+/* ---------- zones diagram ---------- */
+.plate{margin:24px 0 0;padding:0;border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--surface)}
+.plate img{display:block;width:100%;height:auto;background:#FFFFFF;padding:14px 10px;border-bottom:1px solid var(--rule)}
+.plate figcaption{padding:16px 18px 18px}
+.plate figcaption p{margin:0;max-width:var(--measure);font-size:14.5px}
+.deb{list-style:none;padding:0;margin:14px 0 0;max-width:none;display:grid;gap:9px}
+.deb li{margin:0;display:grid;grid-template-columns:104px 1fr;gap:12px;font-size:14px;line-height:1.45;color:var(--ink-soft);align-items:baseline}
+.deb li::marker{content:none}
+.dv{display:block}
+.dl{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.credit{margin-top:14px!important;font-size:11.5px!important;color:var(--ink-faint)}
+@media (max-width:560px){.deb li{grid-template-columns:1fr;gap:2px}}
+
+/* ---------- footer ---------- */
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--rule)}
+footer p{font-size:13px;color:var(--ink-faint);max-width:var(--measure)}
+.rulepair{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.rulepair span{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);white-space:nowrap}
+.rulepair::before,.rulepair::after{content:"";height:1px;background:var(--rule);flex:1}
+</style>
+</head>
+<body>
+<div class="rail" aria-hidden="true"></div>
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow">Welcome to the Cardiothoracic ICU</p>
+  <h1>You know ICU. This is <em>what's different here.</em></h1>
+  <p class="deck">An orientation survey for experienced nurses moving into cardiothoracic surgical critical care — the operations that come off the table, the drips you'll titrate, and the places where the targets are the opposite of what you're used to.</p>
+  <dl class="meta">
+    <div><dt>Written for</dt><dd>Experienced RNs, new to CT surgery</dd></div>
+    <div><dt>Read time</dt><dd>~30 minutes</dd></div>
+    <div><dt>Scope</dt><dd>Adult CT surgical ICU</dd></div>
+  </dl>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="toc-in">
+    <a href="#start">Start here</a>
+    <a href="#arrival">First hour</a>
+    <a href="#board">The board</a>
+    <a href="#goals">Hemodynamic goals</a>
+    <a href="#aorta">Aortic disease</a>
+    <a href="#arch">Arch &amp; FET</a>
+    <a href="#drips">Drips</a>
+    <a href="#salvage">Salvage meds</a>
+    <a href="#basics">Electrolytes &amp; rhythm</a>
+    <a href="#call">Call now</a>
+  </div>
+</nav>
+
+<section id="start">
+  <div class="sec-head"><span class="sec-num">01</span><h2>Start here</h2></div>
+  <p class="lede">Almost everything that makes a post-cardiotomy patient behave strangely traces back to one thing: cardiopulmonary bypass. Blood is drained from the vena cava, oxygenated and stripped of CO₂ by a membrane, warmed or cooled by a heat exchanger, and returned to the ascending aorta by a pump. The coagulopathy, the inflammatory storm, the AKI, the delirium, the fluid shifts — those are the pump's fingerprints, not separate diagnoses.</p>
+  <p>The second thing to internalize is that <strong>post-op targets are procedure-specific and sometimes opposite.</strong> A myectomy and a CABG in adjacent beds want contradictory things from you. The number that keeps one patient alive will decompensate the other. Most of what follows is built around that one idea, because it is the fastest way an experienced ICU nurse gets into trouble here.</p>
+  <div class="call key">
+    <p class="lbl">How to use this</p>
+    <p>This is a survey, not a protocol. Every dose and target here is a reference baseline — <strong>the patient's own orders and current institutional policy always win.</strong> When the two disagree, the order wins and you should ask why.</p>
+  </div>
+</section>
+
+<section id="arrival">
+  <div class="sec-head"><span class="sec-num">02</span><h2>The first hour</h2></div>
+  <p class="sec-sub">You have taken plenty of admissions. You have probably never taken a fresh heart. The pattern is different enough that it is worth walking once before you do it live.</p>
+
+  <p>A post-op cardiac patient arrives <strong>intubated, cold, coagulopathic, and on several drips</strong>, accompanied by anesthesia and often perfusion. Nothing about the first hour is leisurely, and almost all of it is sequence rather than judgment — which is good news, because sequence is learnable.</p>
+
+  <h4>What rolls in with them</h4>
+  <div class="grid g3">
+    <div class="card">
+      <p class="name">Lines and access</p>
+      <p>Arterial line, one or two central lines, sometimes a PA catheter. Foley. Peripheral IVs.</p>
+      <p class="watch"><b>Do first</b>Level and zero every transducer to the phlebostatic axis before you believe a single number.</p>
+    </div>
+    <div class="card">
+      <p class="name">Drainage</p>
+      <p>One or more chest tubes — mediastinal, pleural, or both. A CSF drain if the repair extended into the descending aorta.</p>
+      <p class="watch"><b>Do first</b>Confirm suction, confirm the system sits below chest level, and mark the starting output with a time.</p>
+    </div>
+    <div class="card">
+      <p class="name">Epicardial pacer wires</p>
+      <p>Atrial, ventricular, or both. They are the backup rhythm for the next several days.</p>
+      <p class="watch"><b>Do first</b>Establish capture and sensing thresholds and <strong>find out whether this patient is pacer-dependent</strong> before you need to know.</p>
+    </div>
+  </div>
+
+  <h4>What to get out of the handoff</h4>
+  <p>Anesthesia and perfusion know things about the next twelve hours that are not written anywhere yet. Ask for them before the team scatters.</p>
+  <ul>
+    <li><strong>Pump time, cross-clamp time, and — for arch cases — circulatory arrest time.</strong> Long runs predict coagulopathy, vasoplegia, and a slower wake-up. This is your single best predictor of how the night goes.</li>
+    <li><strong>What came off the table.</strong> The exact operation, not the scheduled one. Plans change intraoperatively, and the hemodynamic targets in §04 hinge on which one actually happened.</li>
+    <li><strong>Blood products given, and whether they are still bleeding.</strong> Surgical bleeding and coagulopathic bleeding look identical in the canister and are managed completely differently.</li>
+    <li><strong>Rhythm and pacing.</strong> Underlying rhythm, whether they are being paced, and at what settings.</li>
+    <li><strong>Anything that surprised the surgeon.</strong> A difficult wean from bypass, a friable aorta, a coronary that did not look right — this is the sentence that explains everything that happens at 0300.</li>
+  </ul>
+
+  <h4>The first sixty minutes</h4>
+  <ol class="steps">
+    <li><span class="st">Confirm every drip against the order and the concentration</span><span class="sd">Not just the rate, and not from memory. Concentrations are in §07 — an infusion that transferred from another pump or another unit is where the errors live.</span></li>
+    <li><span class="st">Labs and films</span><span class="sd">CBC, CMP, coagulation panel, ABG with lactate, and troponin. Twelve-lead ECG. Portable chest film to verify tube and line position.</span></li>
+    <li><span class="st">Set the target for <em>this</em> operation</span><span class="sd">Before you titrate anything, know whether you are protecting a graft at SBP ≤ 140 or a fresh anastomosis at SBP ≤ 120 — and, after a myectomy or TAAA, whether the usual rules are inverted. §04 has the table.</span></li>
+    <li><span class="st">Rewarm, and expect the coagulopathy to follow</span><span class="sd">Core to 36–37 °C, gradually. Platelet function improves above 34 °C, so some early oozing resolves on its own as the patient warms. Rapid rewarming buys an overshoot you will then have to treat.</span></li>
+    <li><span class="st">Trend the chest tube, don't just read it</span><span class="sd">Output q15–30 min with the time written down. A single number means nothing; the slope is the finding. Re-op thresholds are in §06.</span></li>
+    <li><span class="st">Start thinking about extubation</span><span class="sd">Goal is 4–6 h for a routine CABG or valve, POD 1–2 after arch work. Sedation that drifts long is the most common reason it slips.</span></li>
+  </ol>
+
+  <div class="call stop">
+    <p class="lbl">Two things that should stop the routine</p>
+    <p><strong>Chest tube output that suddenly stops</strong> in a patient who was draining — paired with a rising CVP, distended neck veins, or a falling pressure — is tamponade until an echo says otherwise. The tube did not "finish." It clotted.</p>
+    <p><strong>Hemodynamic collapse in the first hours</strong> does not get standard compressions. Emergent resternotomy at the bedside is the intervention, and §08 has the sequence. Know where the tray is before your first shift, not during it.</p>
+  </div>
+</section>
+
+<section id="board">
+  <div class="sec-head"><span class="sec-num">03</span><h2>What comes off the table</h2></div>
+  <p class="sec-sub">The recurring cases in a CT surgical ICU, and the one thing each is most likely to do to you.</p>
+
+  <h4>Coronary &amp; valve</h4>
+  <div class="grid g2">
+    <div class="card">
+      <p class="name">Coronary Artery Bypass Grafting</p><span class="abbr">CABG · on-pump or OPCAB</span>
+      <p>Arrives POD 0 intubated, extubation goal 4–6 h. <strong>Find out which conduits they used</strong> — LIMA-to-LAD drives long-term survival, and a radial artery changes what hangs.</p>
+      <p class="watch"><b>Watch</b>Bleeding (re-op thresholds), POAF at 30–40% peaking POD 2–3, MAP ≥ 70, UOP &gt; 0.5 mL/kg/h.</p>
+      <p class="watch"><b>Conduits</b><strong>Radial artery spasms</strong> — expect a vasodilator early and an oral calcium channel blocker at discharge. IMA can spasm, less readily. <strong>Saphenous vein does not spasm</strong>; no vasodilator is needed to protect it.</p>
+    </div>
+    <div class="card">
+      <p class="name">Aortic Valve / Root Replacement</p><span class="abbr">AVR · Bentall · VSARR</span>
+      <p>Tissue, mechanical, or valve-sparing. Anticoagulation depends entirely on which: mechanical = warfarin lifelong; tissue and VSARR = ASA 81 only.</p>
+      <p class="watch"><b>Watch</b>Complete heart block (5–8% need a PPM). Post-Bentall chest pain POD 0–2 = coronary button ischemia until proven otherwise.</p>
+    </div>
+    <div class="card">
+      <p class="name">Mitral Valve Surgery</p><span class="abbr">MV repair &gt; replacement</span>
+      <p>Repair preferred in &gt;90% of cases. Sternotomy or robotic. Highest POAF rate of any cardiac surgery at 40–50%.</p>
+      <p class="watch"><b>Watch</b>SAM after repair flips the rules — more volume and afterload, <em>no</em> vasodilators or inotropes. Echo before you treat the hypotension.</p>
+    </div>
+    <div class="card">
+      <p class="name">Tricuspid Valve Surgery</p><span class="abbr">TV repair · replacement</span>
+      <p>Usually concomitant with MV or AVR. Isolated TV surgery carries 10–15% mortality. RV recovery runs weeks to months.</p>
+      <p class="watch"><b>Watch</b>Trend the CVP, don't chase a number — accept 12–15 if the patient is perfusing. Avoid aggressive diuresis.</p>
+    </div>
+  </div>
+
+  <h4>Aortic</h4>
+  <div class="grid g2">
+    <div class="card">
+      <p class="name">Ascending / Arch Open Repair</p><span class="abbr">Hemiarch · total arch · FET</span>
+      <p>Sternotomy, CPB, and for arch work deep hypothermic circulatory arrest with antegrade cerebral perfusion. The most fragile patients on the unit.</p>
+      <p class="watch"><b>Watch</b><span class="q q-hot">SBP &lt; 120 strictly</span> and neuro exams that stay frequent for 72 h — deficits declare late.</p>
+    </div>
+    <div class="card">
+      <p class="name">Descending / TAAA / TEVAR</p><span class="abbr">Open thoracotomy or endovascular</span>
+      <p>Open TAAA carries 5–20% paraplegia risk by Crawford type; TEVAR 2–5%. Spinal cord ischemia here is preventable, which is the whole point.</p>
+      <p class="watch"><b>Watch</b>CSF drain &lt; 10 mmHg, output 10–20 mL/h, <span class="q q-hot">MAP ≥ 85</span>, hourly lower-extremity motor and sensory checks.</p>
+    </div>
+  </div>
+
+  <h4>Rhythm &amp; structural</h4>
+  <div class="grid g3">
+    <div class="card">
+      <p class="name">Cox-MAZE IV</p><span class="abbr">Surgical AF ablation</span>
+      <p>RF or cryo lesion sets plus LAA ligation, usually concomitant. 70–85% AF-free at one year in paroxysmal AF.</p>
+      <p class="watch"><b>Watch</b>AF in the first 90 days is <em>expected</em> — the blanking period. Rate control and amiodarone, not cardioversion.</p>
+    </div>
+    <div class="card">
+      <p class="name">Septal Myectomy</p><span class="abbr">HCM · LVOT obstruction</span>
+      <p>Slow, full, squeezed. Phenylephrine is the pressor. The bundle of His runs through the septum, so heart block is real.</p>
+      <p class="watch"><b>Watch</b>Inotropes and vasodilators <em>increase</em> the gradient. Everything you'd reach for post-CABG is wrong here.</p>
+    </div>
+    <div class="card">
+      <p class="name">TAVR</p><span class="abbr">Transcatheter AVR</span>
+      <p>No CPB, transfemoral in most cases, POD 1 discharge common. DAPT × 1 month then ASA lifelong.</p>
+      <p class="watch"><b>Watch</b>New LBBB or CHB needing a PPM in 10–20%. Retroperitoneal bleed: tachycardia + flank pain + Hgb drop = CT stat.</p>
+    </div>
+  </div>
+
+</section>
+
+<section id="goals">
+  <div class="sec-head"><span class="sec-num">04</span><h2>Hemodynamic goals by procedure</h2></div>
+  <p class="sec-sub">The generic post-cardiotomy baseline, then the procedures that deviate from it. Highlighted rows are the ones that invert a habit you already have.</p>
+
+  <h4>Baseline post-cardiotomy targets</h4>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Parameter</th><th class="n">POD 0 (ICU)</th><th class="n">POD 1–3</th><th class="n">POD 4+</th></tr></thead>
+      <tbody>
+        <tr><td class="drug" data-label="Parameter">MAP</td><td class="n" data-label="POD 0 (ICU)">65–90 mmHg</td><td class="n" data-label="POD 1–3">65–90 mmHg</td><td class="n" data-label="POD 4+">70–90 mmHg</td></tr>
+        <tr><td class="drug" data-label="Parameter">SBP</td><td class="n" data-label="POD 0 (ICU)">90–140 mmHg</td><td class="n" data-label="POD 1–3">≤ 140 mmHg</td><td class="n" data-label="POD 4+">≤ 140 mmHg</td></tr>
+        <tr><td class="drug" data-label="Parameter">Heart rate</td><td class="n" data-label="POD 0 (ICU)">80–100 (paced or intrinsic)</td><td class="n" data-label="POD 1–3">60–100</td><td class="n" data-label="POD 4+">60–100</td></tr>
+        <tr><td class="drug" data-label="Parameter">CVP</td><td class="n" data-label="POD 0 (ICU)">8–12 mmHg</td><td class="n" data-label="POD 1–3">8–12 mmHg</td><td class="n" data-label="POD 4+">line usually out</td></tr>
+        <tr><td class="drug" data-label="Parameter">SvO₂</td><td class="n" data-label="POD 0 (ICU)">&gt; 65% (if PA cath)</td><td class="n" data-label="POD 1–3">—</td><td class="n" data-label="POD 4+">—</td></tr>
+        <tr><td class="drug" data-label="Parameter">Cardiac index</td><td class="n" data-label="POD 0 (ICU)">&gt; 2.2 L/min/m²</td><td class="n" data-label="POD 1–3">clinical proxy</td><td class="n" data-label="POD 4+">clinical proxy</td></tr>
+        <tr><td class="drug" data-label="Parameter">Urine output</td><td class="n" data-label="POD 0 (ICU)">&gt; 0.5 mL/kg/h</td><td class="n" data-label="POD 1–3">&gt; 0.5 mL/kg/h</td><td class="n" data-label="POD 4+">&gt; 0.5 mL/kg/h</td></tr>
+        <tr><td class="drug" data-label="Parameter">SpO₂</td><td class="n" data-label="POD 0 (ICU)">≥ 92% (or COPD baseline)</td><td class="n" data-label="POD 1–3">≥ 92%</td><td class="n" data-label="POD 4+">≥ 92%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4>Where the procedure changes the rules</h4>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Procedure</th><th>Target deltas</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td class="drug" data-label="Procedure">CABG — vein grafts</td><td data-label="Target deltas">SBP ≤ 140.</td><td data-label="Why">Protect the distal anastomoses. Vein does not spasm, so a vasodilator here is for pressure or ischemia, not the graft.</td></tr>
+        <tr class="flip"><td class="drug" data-label="Procedure">CABG — arterial conduit<span class="flag">Conduit-specific</span></td><td data-label="Target deltas">SBP ≤ 140, plus a vasodilator for the conduit — IV NTG or diltiazem early, transitioning to an oral calcium channel blocker.</td><td data-label="Why"><strong>Radial artery is a muscular artery and spasms.</strong> IMA can too, less readily. Spasm on a fresh graft presents as ischemia — new ST changes or an unexplained low-output state.</td></tr>
+        <tr><td class="drug" data-label="Procedure">AVR — tissue or mechanical</td><td data-label="Target deltas">SBP ≤ 140. HR 70–90.</td><td data-label="Why">Protect the aortic suture line; avoid diastolic underfilling of the coronary beds.</td></tr>
+        <tr class="flip"><td class="drug" data-label="Procedure">Bentall / root replacement<span class="flag">Tighter than you expect</span></td><td data-label="Target deltas">SBP ≤ 120. MAP 65–85.</td><td data-label="Why">A fresh root plus coronary reimplants blows out at pressures a standalone valve tolerates.</td></tr>
+        <tr class="flip"><td class="drug" data-label="Procedure">Ascending / arch open repair<span class="flag">Tighter than you expect</span></td><td data-label="Target deltas">SBP ≤ 120 strictly. MAP 65–85. Beta-blockade first-line.</td><td data-label="Why">Anastomoses plus residual diseased aorta don't tolerate swings. dP/dt control, not just pressure.</td></tr>
+        <tr class="flip"><td class="drug" data-label="Procedure">Acute Type A repair<span class="flag">Tighter than you expect</span></td><td data-label="Target deltas">SBP ≤ 120 strict. HR ≤ 80.</td><td data-label="Why">dP/dt control prevents propagation of residual dissection.</td></tr>
+        <tr class="flip"><td class="drug" data-label="Procedure">Descending / TAAA / TEVAR<span class="flag">MAP floor, not ceiling</span></td><td data-label="Target deltas">SBP 100–120 but <strong>MAP ≥ 85</strong>. Monitor CSF pressure if a drain is in.</td><td data-label="Why">Spinal cord perfusion = MAP − CSF pressure. Below 70 mmHg risks paraplegia.</td></tr>
+        <tr><td class="drug" data-label="Procedure">Mitral repair</td><td data-label="Target deltas">SBP ≤ 140. Sinus preferred.</td><td data-label="Why">Preload-dependent; watch for new SAM.</td></tr>
+        <tr><td class="drug" data-label="Procedure">Mitral replacement (mech)</td><td data-label="Target deltas">SBP ≤ 140. HR 70–90. AC critical.</td><td data-label="Why">Thromboembolic risk is high; rate control reduces it.</td></tr>
+        <tr class="flip"><td class="drug" data-label="Procedure">Tricuspid surgery<span class="flag">Trend, don't chase</span></td><td data-label="Target deltas">Watch CVP <em>trend</em>. Allow up to 15 mmHg short-term if perfusing.</td><td data-label="Why">RV dysfunction is expected. The goal is forward flow, not a tidy number.</td></tr>
+        <tr><td class="drug" data-label="Procedure">MAZE</td><td data-label="Target deltas">HR 70–90, sinus preferred — but early AF is expected.</td><td data-label="Why">New AF in the first 4 weeks is common and often self-resolves. DCCV is ineffective until scar matures.</td></tr>
+        <tr class="flip"><td class="drug" data-label="Procedure">Septal myectomy (HCM)<span class="flag">Opposite of CABG</span></td><td data-label="Target deltas">MAP 70–90 with <strong>phenylephrine</strong>. HR 60–80. CVP 10–14. <strong>No NTG, nicardipine, or milrinone.</strong></td><td data-label="Why">Slow, full, squeezed. Vasodilation and tachycardia re-provoke the LVOT gradient and cause shock.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="tnote">Always verify patient-specific orders against this table. It is a baseline, not an order set.</p>
+</section>
+
+<section id="aorta">
+  <div class="sec-head"><span class="sec-num">05</span><h2>Aortic dissection</h2></div>
+  <p class="sec-sub">An intimal tear lets blood dissect into the aortic wall. Where the tear sits determines whether the patient goes to the OR in the next hour or to a bed with an esmolol drip.</p>
+
+  <figure class="plate">
+    <img src="data:image/png;base64,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" alt="Aortic dissection classification. A normal aorta at left. Stanford Type A covers DeBakey Type I, in which the dissection begins in the ascending aorta and extends through the arch into the descending and abdominal aorta, and DeBakey Type II, in which it is confined to the ascending aorta. Stanford Type B corresponds to DeBakey Type III, beginning distal to the left subclavian artery and extending down the descending aorta." width="700" height="518">
+    <figcaption>
+      <p><strong>Two classification systems, one decision.</strong> Stanford asks only whether the ascending aorta is involved, because that is what determines whether the patient goes to the OR now. DeBakey describes how far the dissection actually runs — which is what determines the <em>operation</em>.</p>
+      <ul class="deb">
+        <li><span class="dl">DeBakey I</span><span class="dv">Ascending <em>and</em> arch and beyond. Stanford A. Emergency surgery — and the one most likely to need a total arch or a frozen elephant trunk, because the repair has to chase the tear past the arch vessels.</span></li>
+        <li><span class="dl">DeBakey II</span><span class="dv">Confined to the ascending aorta. Stanford A. Still an emergency, but an ascending or hemiarch repair usually finishes it.</span></li>
+        <li><span class="dl">DeBakey III</span><span class="dv">Distal to the left subclavian. Stanford B. Medical impulse control first; TEVAR if it becomes complicated.</span></li>
+      </ul>
+      <p class="credit">Diagram: SAEM CDEM M4 Curriculum, Thoracic Aortic Dissection.</p>
+    </figcaption>
+  </figure>
+
+  <h3>Type A — the clock is the diagnosis</h3>
+  <p>Roughly <strong>1–2% mortality per hour untreated across the first 48 hours.</strong> When one transfers in from an outside hospital, the goal is the OR within an hour of arrival. Sudden tearing chest or back pain with a pulse or BP differential between arms, or a widened mediastinum, is the presentation. CT angiography is the gold standard at 95–98% sensitivity and specificity; D-dimer is a rule-out tool only.</p>
+
+  <div class="call stop">
+    <p class="lbl">Sequence matters — beta-blocker first</p>
+    <p>Impulse control is <strong>IV beta-blocker first</strong> (esmolol or labetalol, targeting HR ≤ 60), <em>then</em> a vasodilator (nicardipine or nitroprusside, targeting SBP ≤ 120). Never a vasodilator alone: the reflex tachycardia raises dP/dt and propagates the dissection. This is the single most consequential ordering error in aortic care.</p>
+  </div>
+
+  <ol class="steps">
+    <li><span class="st">Confirm imaging and access</span><span class="sd">CTA or MRI in hand, two IVs, arterial line, Foley.</span></li>
+    <li><span class="st">Beta-blockade STAT</span><span class="sd">Labetalol 5–20 mg IV push, repeating 5–40 mg q5–10 min to a max of 80 mg per dose; or esmolol, loaded then run at 50 mcg/kg/min. Target HR ≤ 60.</span></li>
+    <li><span class="st">Then the vasodilator</span><span class="sd">Nicardipine 5 mg/hr, up by 1 mg/hr q5 min to a max of 15, targeting SBP ≤ 120. Clevidipine 1 mg/hr is the alternative. Only after the rate is controlled.</span></li>
+    <li><span class="st">Type and cross 6+ units</span><span class="sd">Anticipate CPB, possible DHCA, and major bleeding.</span></li>
+    <li><span class="st">Mobilize the team</span><span class="sd">CT surgery, anesthesia, OR — simultaneously, not sequentially. Consent while this runs.</span></li>
+  </ol>
+  <p class="tnote">Most of the time you will meet this patient <em>after</em> the repair, not before — but you may hold one briefly while the OR turns over, and the sequence above is what you are maintaining when you do. Post-op 30-day mortality runs 10–15%. Expect ICU POD 4–6+ and a total stay of 10–14+ days, longer and sicker than an elective ascending repair.</p>
+
+  <h3>Type B — medical management, with conditions</h3>
+  <p>Tear distal to the left subclavian. If there's no malperfusion, no rupture, and no refractory pain, it is <em>uncomplicated</em> and managed medically: strict impulse control at HR ≤ 60 and SBP 100–120, two IVs, arterial line, serial neuro exams and peripheral pulses each shift, repeat imaging at 48–72 h. <strong>Complicated</strong> Type B — malperfusion, expansion, refractory pain or hypertension — goes to TEVAR. Ninety-day mortality is 10–20% for uncomplicated disease and higher for complicated.</p>
+</section>
+
+<section id="arch">
+  <div class="sec-head"><span class="sec-num">06</span><h2>Total arch, DHCA, and the frozen elephant trunk</h2></div>
+  <p class="sec-sub">Arch patients are among the sickest post-operative cardiac patients on the unit: prolonged bypass, circulatory arrest, multiple transfusions, and an extended window in which neurologic deficits can still declare.</p>
+
+  <h3>How far the operation went</h3>
+  <div class="grid g2">
+    <div class="card">
+      <p class="name">Ascending repair</p><span class="abbr">Zone 0 · no arch involvement</span>
+      <p>Simple tube graft, often with AVR or valve-sparing root replacement. <strong>No DHCA needed.</strong> Shorter pump time, lower morbidity.</p>
+      <p class="watch"><b>Expect</b>ICU 2–4 days, discharge POD 7–10 if elective.</p>
+    </div>
+    <div class="card">
+      <p class="name">Hemiarch</p><span class="abbr">Zones 0–1</span>
+      <p>Stops at or before the left carotid. <strong>Requires DHCA plus antegrade cerebral perfusion.</strong> Typical circulatory arrest 30–45 min.</p>
+      <p class="watch"><b>Expect</b>Innominate and left carotid reimplanted; left subclavian variable.</p>
+    </div>
+    <div class="card">
+      <p class="name">Total arch</p><span class="abbr">Zones 0–2</span>
+      <p>All three arch vessels reimplanted. <strong>Longest arrest times, 40–45 min</strong>, and the highest DHCA-related morbidity. Reserved for dissection or extensive aneurysm.</p>
+      <p class="watch"><b>Expect</b>The highest neuro-vigilance burden of any case you'll take.</p>
+    </div>
+    <div class="card">
+      <p class="name">Frozen elephant trunk</p><span class="abbr">FET · staged repair</span>
+      <p>Hemiarch or total arch with the graft <strong>partially deployed into the descending aorta</strong>. The "trunk" is a landing zone for a second operation in 6–12 weeks.</p>
+      <p class="watch"><b>Expect</b>Staging is discharge teaching. If the second operation slips past 3 months, the false lumen can re-expand.</p>
+    </div>
+  </div>
+
+  <h3>Deep hypothermic circulatory arrest</h3>
+  <p>Three things at once: <strong>profound hypothermia</strong> (core cooled to 18–22 °C, or moderate 22–28 °C with adjuncts), <strong>complete circulatory arrest</strong>, and <strong>selective cerebral perfusion</strong> — antegrade via the axillary or innominate artery, which is the modern standard. Cerebral metabolic rate falls roughly 7% per degree Celsius, so at 18 °C the brain tolerates 30–40 minutes of arrest if rewarming is gradual.</p>
+  <div class="call watch">
+    <p class="lbl">The 72-hour rule</p>
+    <p>Post-op stroke risk is <strong>3–5% with modern DHCA plus ACP</strong>, and 8–10% with older DHCA-only technique. <strong>Deficits declare late — over 48 to 72 hours</strong> as rewarming completes. The POD 0 exam is unreliable because of residual sedation; your real baseline is POD 1 AM. Do not lower your guard after POD 1, and know the last-normal time.</p>
+  </div>
+
+  <h3>The post-op arc</h3>
+  <div class="pod">
+    <div class="pod-row">
+      <div class="pod-when">POD 0<span>ICU only</span></div>
+      <div class="pod-body"><ul>
+        <li><strong>Neuro q1h × 4 h, then q4h.</strong> Focal deficits, lower-extremity strength and sensation, mental status.</li>
+        <li><strong>SBP ≤ 120 strictly</strong> — labetalol 5–20 mg push then 5–40 mg q5–10 min, or a nicardipine drip at 5 mg/hr titrated by 1 mg/hr q5 min. MAP ≥ 65 for renal perfusion, but the SBP ceiling takes priority.</li>
+        <li><strong>Don't crash the pressure.</strong> Rapid drops in the first hour risk watershed stroke — drift down over 1–2 hours, not 20 minutes.</li>
+        <li>Chest tube output q15–30 min. Re-op territory: &gt; 400 mL/h × 1 h, &gt; 300 × 2–3 h, &gt; 200 × 4 h. Higher baseline output than a CABG — more suture lines.</li>
+        <li>Core temp to 36–37 °C gradually. Hypothermic coagulopathy reverses above 34 °C.</li>
+        <li>Document pacer capture and sensing thresholds now — you'll need the comparison.</li>
+      </ul></div>
+    </div>
+    <div class="pod-row">
+      <div class="pod-when">POD 1–3<span>ICU → stepdown</span></div>
+      <div class="pod-body"><ul>
+        <li>Extubation goal POD 1–2. Common delays: post-DHCA pulmonary edema, diaphragm dysfunction, recurrent laryngeal nerve injury.</li>
+        <li><strong>Neuro vigilance continues.</strong> Every shift minimum, q4h preferred through POD 3. Delirium is very common and the hypoactive form is easy to miss.</li>
+        <li>Coagulopathy normalizes POD 2–3 as fibrinogen and platelets recover. Transfuse below Hgb 8, or 9 if age &gt; 70 or known CAD.</li>
+        <li><strong>Complete heart block can appear POD 1–4.</strong> Roughly 7–10% of root repairs need permanent pacing.</li>
+        <li>POAF peaks POD 2–3. Replace K⁺ ≥ 4.0 and Mg²⁺ ≥ 2.0 first, then call.</li>
+        <li>Transition SBP control from IV to PO — metoprolol 25–50 mg BID once tolerating diet, bridging off labetalol and nicardipine.</li>
+      </ul></div>
+    </div>
+    <div class="pod-row">
+      <div class="pod-when">POD 4+<span>stepdown · telemetry</span></div>
+      <div class="pod-body"><ul>
+        <li><strong>Pacer wires stay POD 4–7</strong> — longer than a CABG. Do not remove on the floor without a surgeon or APP order.</li>
+        <li>SBP ≤ 120 remains the target for the first 4–6 weeks after surgery. This is not a soft goal.</li>
+        <li>Bowel regimen is mandatory — straining is Valsalva, and Valsalva is aortic stress on fresh anastomoses.</li>
+        <li>Discharge teaching: lifelong surveillance CTA at 1, 6, and 12 months then annually; no lifting beyond the surgeon's stated limit × 6 weeks; genetic counseling and first-degree relative screening for Marfan, Loeys-Dietz, Ehlers-Danlos, or bicuspid aortopathy.</li>
+        <li><strong>Arch repair without a mechanical valve means aspirin only</strong> — not routine warfarin. This is a common misconception.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <h3>Three nerves and a cord</h3>
+  <div class="grid g2">
+    <div class="card">
+      <p class="name">Recurrent laryngeal nerve</p>
+      <p>Hoarseness post-op is RLN injury until proven otherwise. <strong>No PO diet without a swallow evaluation.</strong> A weak cough means high aspiration risk; NG feeds until it recovers, typically 6–12 weeks for a neuropraxia.</p>
+    </div>
+    <div class="card">
+      <p class="name">Phrenic nerve</p>
+      <p>Elevated hemidiaphragm on serial CXR plus unexplained dyspnea or hypoxemia. Usually recovers in 6–12 weeks; plication is an option if severe and persistent. Document it on imaging for future reference.</p>
+    </div>
+    <div class="card">
+      <p class="name">Spinal cord</p>
+      <p>If the repair extended into the descending aorta there may be a CSF drain: positioned at the foramen magnum, output 10–20 mL/h, <span class="q q-hot">MAP ≥ 85</span>. <strong>Any new lower-extremity weakness = STAT call and raise the MAP goal immediately.</strong></p>
+    </div>
+    <div class="card">
+      <p class="name">Coronary buttons (Bentall)</p>
+      <p>Not a nerve, but it belongs in the same reflex. Any new chest pain POD 0–2 after a Bentall is a STAT ECG, troponin, and OR standby — button compression or kinking presents as ST elevation and cardiogenic shock.</p>
+    </div>
+  </div>
+</section>
+
+<section id="drips">
+  <div class="sec-head"><span class="sec-num">07</span><h2>What's hanging</h2></div>
+  <p class="sec-sub">Pressors raise pressure by constricting. Inotropes raise contractility. Inodilators do both, which is why they need a pressor riding alongside. The concentrations and titration parameters below are drawn from an institutional IV infusion titration policy — representative of adult CT surgical practice, but <strong>not universal</strong>.</p>
+
+  <div class="call key">
+    <p class="lbl">Read the columns this way — and check them against yours</p>
+    <p><strong>Standard concentration</strong> is how pharmacy sends it. <strong>Initial rate, titration, and maximum are defaults that apply only when the prescriber hasn't specified otherwise</strong> — that framing is what lets you titrate without calling for every change. <strong>Where</strong> is the unit restriction: an asterisk means fixed dose only, no titration, and you may not <em>initiate</em> there — therapy transfers in from ICU once the dose is stable.</p>
+    <p><strong>Standard concentrations are an institutional decision, not a fact about the drug.</strong> Norepinephrine 8 mg/250 mL is common; it is not universal, and neither are the maximums or the unit restrictions. Confirm every one of these against your own pharmacy's chart before you rely on a number here.</p>
+  </div>
+
+  <div class="call watch">
+    <p class="lbl">Units — this is the thing to unlearn</p>
+    <p>Institutions split on this, and it is the error most likely to bite you on arrival. In the scheme below, norepinephrine, epinephrine, phenylephrine, nitroglycerin, and isoproterenol all run in <span class="q">mcg/min</span>, <em>not</em> weight-based. The weight-based agents are dobutamine, dopamine, milrinone, nitroprusside, and esmolol in <span class="q">mcg/kg/min</span>, and angiotensin II in <span class="q">ng/kg/min</span>. <strong>Find out which convention your unit uses on day one.</strong> Reading a norepinephrine rate as weight-based when it isn't — or the reverse — is a large error hiding in a small-looking number.</p>
+  </div>
+
+  <h4>Vasopressors and inotropes</h4>
+  <div class="rx">
+    <div class="rx-row">
+      <div class="rx-name">Norepinephrine<span class="abbr">Levophed</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>8 mg/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>0.5 mcg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 0.5 mcg/min q3–5 min</dd></div>
+        <div><dt>Maximum</dt><dd>30 mcg/min</dd></div>
+      </dl>
+      <p class="rx-note">ICU. On SD it is fixed-dose only, max 5 mcg/min, with an A-line.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Phenylephrine<span class="abbr">Neo-Synephrine</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>40 mg/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>50 mcg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 25 mcg/min q5 min</dd></div>
+        <div><dt>Maximum</dt><dd>200 mcg/min</dd></div>
+      </dl>
+      <p class="rx-note">ICU. A provider must be present for the 50–100 mcg push dose.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Vasopressin<span class="abbr">Pitressin</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>40 units/100 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>0.02 units/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 0.01 units/min</dd></div>
+        <div><dt>Maximum</dt><dd>0.04 units/min</dd></div>
+      </dl>
+      <p class="rx-note">ICU; SD fixed-dose. Non-catecholamine, so it keeps working in acidosis.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Epinephrine<span class="abbr">Adrenalin</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>8 mg/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>1 mcg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 1 mcg/min</dd></div>
+        <div><dt>Maximum</dt><dd>20 mcg/min</dd></div>
+      </dl>
+      <p class="rx-note">ICU only.</p>
+    </div>
+    <div class="rx-row restricted">
+      <div class="rx-name">Angiotensin II<span class="abbr">Giapreza</span><span class="flag">Restricted</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>2.5 mg/500 mL <strong>NS only</strong><br>5,000–10,000 ng/mL</dd></div>
+        <div><dt>Initial rate</dt><dd>10–20 ng/kg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 15 ng/kg/min q5 min</dd></div>
+        <div><dt>Maximum</dt><dd>80 ng/kg/min × 3 h,<br>then 40 ng/kg/min</dd></div>
+      </dl>
+      <p class="rx-note">ICU, <strong>central line</strong>. Restricted third-line agent: the patient must already be on norepinephrine <em>and</em> a second pressor at equivalent dose before this can start.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Dobutamine<span class="abbr">Dobutrex</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>1000 mg/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>2.5 mcg/kg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 2.5 mcg/kg/min q3 min</dd></div>
+        <div><dt>Maximum</dt><dd>40 mcg/kg/min</dd></div>
+      </dl>
+      <p class="rx-note">ICU. On SD/TM the max is 10 mcg/kg/min with no titration orders.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Milrinone<span class="abbr">Primacor</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>20 mg/100 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>0.25 mcg/kg/min</dd></div>
+        <div><dt>Titrate</dt><dd>to effect</dd></div>
+        <div><dt>Maximum</dt><dd>1 mcg/kg/min</dd></div>
+      </dl>
+      <p class="rx-note">Bolus 50 mcg/kg over 10 min requires an order. On SD/TM the max is 0.6 mcg/kg/min and there is <strong>no loading</strong>.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Dopamine<span class="abbr">Intropin</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>800 mg/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>2 mcg/kg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 1 mcg/kg/min q10 min</dd></div>
+        <div><dt>Maximum</dt><dd>20 mcg/kg/min</dd></div>
+      </dl>
+      <p class="rx-note">ICU, SD, TM.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Isoproterenol<span class="abbr">Isuprel</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>2 mg/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>2 mcg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 1 mcg/min q15 min</dd></div>
+        <div><dt>Maximum</dt><dd>10 mcg/min</dd></div>
+      </dl>
+      <p class="rx-note">ICU only.</p>
+    </div>
+  </div>
+
+  <div class="call stop">
+    <p class="lbl">Every one of these is a vesicant</p>
+    <p>Norepinephrine, phenylephrine, vasopressin, epinephrine, dobutamine, and dopamine are all vesicants — <strong>central line is the expectation.</strong> Angiotensin II and nitroprusside are central-line-only in practice.</p>
+    <p>Peripheral administration is permitted for up to <strong>24 hours</strong> at defined concentrations — norepinephrine 32 mcg/mL, phenylephrine 0.16 mg/mL, vasopressin 0.4 units/mL, dopamine 3.2 mg/mL — but only if the IV is <strong>at least 20 gauge, less than 24 hours old, at or above the forearm, with good blood return</strong>, and the site is visible throughout and assessed at least q2h. <strong>You re-assess those conditions at the start of every shift.</strong> If the patient is awake, teach them to tell you about pain at the site.</p>
+  </div>
+
+  <h4>Matching the agent to the phenotype</h4>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Picture</th><th>Hemodynamics</th><th>First line</th><th>Avoid</th></tr></thead>
+      <tbody>
+        <tr><td class="drug" data-label="Picture">Cardiogenic</td><td class="n" data-label="Hemodynamics">↓ CO, ↑ SVR, ↑ PCWP</td><td data-label="First line">Dobutamine, milrinone, or low-dose epinephrine; add a pressor for MAP</td><td data-label="Avoid">Phenylephrine — it worsens afterload</td></tr>
+        <tr><td class="drug" data-label="Picture">Distributive / septic</td><td class="n" data-label="Hemodynamics">↑ CO, ↓ MAP, ↓ SVR</td><td data-label="First line">Norepinephrine, then vasopressin; hydrocortisone if prolonged</td><td data-label="Avoid">Pure inotropes without a pressor; delaying escalation</td></tr>
+        <tr><td class="drug" data-label="Picture">Mixed</td><td class="n" data-label="Hemodynamics">↓↓ CO, ↓↓ MAP, ↑ PCWP</td><td data-label="First line">Norepinephrine first, then titrate dobutamine to CO and lactate</td><td data-label="Avoid">Epinephrine monotherapy; vasopressin alone</td></tr>
+        <tr><td class="drug" data-label="Picture">RV failure</td><td class="n" data-label="Hemodynamics">↓ CO, ↑ PVR</td><td data-label="First line">Milrinone + inhaled NO + norepinephrine for MAP</td><td data-label="Avoid">High-dose epinephrine; phenylephrine alone</td></tr>
+        <tr class="flip"><td class="drug" data-label="Picture">HCM / LVOT obstruction<span class="flag">Inverted</span></td><td class="n" data-label="Hemodynamics">variable; syncope, shock</td><td data-label="First line"><strong>Phenylephrine + volume.</strong> Raise SVR to shrink the gradient</td><td data-label="Avoid"><strong>Any inotrope.</strong> Dobutamine here is a disaster</td></tr>
+        <tr><td class="drug" data-label="Picture">Vasoplegia post-CPB</td><td class="n" data-label="Hemodynamics">↓↓ MAP, ↓ SVR, CO normal or high</td><td data-label="First line">Norepi → vasopressin → methylene blue / angiotensin II → hydrocortisone</td><td data-label="Avoid">Inotropes — output isn't the problem</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4>Blood pressure and dP/dt control</h4>
+  <div class="rx">
+    <div class="rx-row">
+      <div class="rx-name">Nicardipine<span class="abbr">Cardene</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>Periph 20 mg/200 mL<br>or 40 mg/200 mL<br>Central 50 mg/100 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>5 mg/hr</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 1 mg/hr q5 min</dd></div>
+        <div><dt>Maximum</dt><dd>15 mg/hr</dd></div>
+      </dl>
+      <p class="rx-note">Max concentration 0.1 mg/mL peripheral, 0.5 mg/mL central. BP q5–15 min after any rate change. A-line required outside ICU.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Clevidipine<span class="abbr">Cleviprex</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>25 mg/50 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>1 mg/hr</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 1 mg/hr q5 min;<br>q5–10 min once at goal</dd></div>
+        <div><dt>Maximum</dt><dd>21 mg/hr ICU<br>7 mg/hr SD · 72 h</dd></div>
+      </dl>
+      <p class="rx-note"><strong>Use within 12 hours of puncturing the stopper.</strong> Change tubing q12h and with every new bottle. Continuous automatic BP monitoring.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Nitroglycerin<span class="abbr">NTG</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>50 mg/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>5 mcg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 5 mcg/min q3–5 min</dd></div>
+        <div><dt>Maximum</dt><dd>200 mcg/min<br>usual 5–20</dd></div>
+      </dl>
+      <p class="rx-note"><strong>Dedicated NTG tubing is required.</strong> Initiation must occur in ICU. Post-CABG this is for an <strong>arterial conduit</strong> — a radial artery above all — or for pressure and ischemia. It is not routine graft protection after vein-only grafting.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Nitroprusside<span class="abbr">Nipride</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>50 mg/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>0.5 mcg/kg/min</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 0.5 mcg/kg/min q3–5 min</dd></div>
+        <div><dt>Maximum</dt><dd>2 mcg/kg/min<br>up to 10 for ≤ 10 min</dd></div>
+      </dl>
+      <p class="rx-note"><strong>ICU only. Light sensitive — keep the protective covering on.</strong> Central line preferred. Follow cyanide/thiocyanate and acid-base status.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Esmolol<span class="abbr">Brevibloc</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>Periph 2500 mg/250 mL<br>Central 2000 mg/100 mL<br>or 5 g/250 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>50 mcg/kg/min<br>after load</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 50 mcg/kg/min q4 min</dd></div>
+        <div><dt>Maximum</dt><dd>see note</dd></div>
+      </dl>
+      <p class="rx-note"><strong>Each titration up includes another loading dose</strong> — calculate carefully. A-line required; may not initiate on SD. Source documents disagree on the ceiling (see below).</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Labetalol<span class="abbr">Trandate</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>200 mg/100 mL</dd></div>
+        <div><dt>Initial rate</dt><dd>0.5 mg/min infusion<br>push 5–20 mg</dd></div>
+        <div><dt>Titrate</dt><dd>↑ 0.5 mg/min q10 min<br>push 5–40 mg q5–10 min</dd></div>
+        <div><dt>Maximum</dt><dd>3 mg/min infusion<br>80 mg per push</dd></div>
+      </dl>
+      <p class="rx-note">Infusion is ICU/SD only, max 1 mg/min on SD. <strong>No titration outside ICU</strong> — the order specifies each change. Outside ICU: telemetry, VS q5–10 min for 20 min after a push.</p>
+    </div>
+  </div>
+
+  <div class="call watch">
+    <p class="lbl">One number to confirm with pharmacy</p>
+    <p>Source documents disagree on the esmolol ceiling. An infusion titration standard gives a bolus of 0.5 mg/kg over 1 min and a maximum of <span class="q">300 mcg/kg/min</span>; a more recent IV administration standard gives a load of 500 mcg/kg/min over 1 min, a re-load at every titration, and a maximum of <span class="q">100 mcg/kg/min</span>. That is a threefold difference in the ceiling. <strong>Do not resolve it from a packet — resolve it from your own current policy and the order in front of you.</strong></p>
+  </div>
+
+  <h4>Rhythm and bleeding</h4>
+  <div class="rx">
+    <div class="rx-row">
+      <div class="rx-name">Amiodarone<span class="abbr">Cordarone</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>Periph 450 mg/250 mL<br>or 360 mg/200 mL<br>Central 750 mg/250 mL</dd></div>
+        <div><dt>Dosing</dt><dd>150 mg over 10 min, then<br>1 mg/min × 6 h,<br>then 0.5 mg/min</dd></div>
+        <div><dt>Maximum</dt><dd>2000 mg/24 h</dd></div>
+      </dl>
+      <p class="rx-note"><strong>Non-PVC container and an in-line filter.</strong> Final concentration 1–6 mg/mL; anything ≥ 2 mg/mL goes central. May be vesicant. Watch for hypotension during the load — it runs about 25%.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Diltiazem<span class="abbr">Cardizem</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>125 mg/125 mL</dd></div>
+        <div><dt>Dosing</dt><dd>Bolus 0.25 mg/kg over 2 min;<br>may repeat 0.35 mg/kg at 15 min.<br>Infusion 5–10 mg/hr</dd></div>
+        <div><dt>Maximum</dt><dd>15 mg/hr</dd></div>
+      </dl>
+      <p class="rx-note">Titrate 5 mg/hr q15 min. BP q5–15 min after a push or rate change. Continuous ECG for infusions; telemetry bed required for push. Also the usual agent for <strong>radial artery conduit spasm</strong>, where it typically continues orally after discharge.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Aminocaproic acid<span class="abbr">Amicar</span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>5 g/250 mL</dd></div>
+        <div><dt>Dosing</dt><dd>4–5 g over 1 h, then<br>1–1.25 g/hr until bleeding stops</dd></div>
+        <div><dt>Maximum</dt><dd>36 g/24 h</dd></div>
+      </dl>
+      <p class="rx-note">Never give undiluted. Hypotension, bradycardia, or arrhythmia means the rate is too fast. Follow fibrinogen and fibrin split products.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Heparin<span class="abbr"></span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>25,000 units/250 mL<br><strong>in D5W</strong></dd></div>
+        <div><dt>Dosing</dt><dd>Per indication. PTT at baseline and<br>6 h after a bolus or rate change</dd></div>
+        <div><dt>Maximum</dt><dd>to PTT 1.5–2.5 × control</dd></div>
+      </dl>
+      <p class="rx-note"><strong>The concentration and diluent shall not be changed.</strong> Follow platelets — this is where HIT declares.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Argatroban<span class="abbr"></span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>250 mg/250 mL</dd></div>
+        <div><dt>Dosing</dt><dd>HIT: 2 mcg/kg/min.<br>PTT at baseline and 4 h after changes</dd></div>
+        <div><dt>Maximum</dt><dd>10 mcg/kg/min</dd></div>
+      </dl>
+      <p class="rx-note">The answer once HIT is confirmed. Monitor H&amp;H and every potential bleeding site.</p>
+    </div>
+    <div class="rx-row">
+      <div class="rx-name">Protamine<span class="abbr"></span></div>
+      <dl class="rx-spec">
+        <div><dt>Standard conc.</dt><dd>—</dd></div>
+        <div><dt>Dosing</dt><dd>Push slowly</dd></div>
+        <div><dt>Maximum</dt><dd>50 mg over 10 min</dd></div>
+      </dl>
+      <p class="rx-note">ICU. <strong>Too-rapid administration causes anaphylaxis, bradycardia, dyspnea, or severe hypotension.</strong></p>
+    </div>
+  </div>
+
+  <p class="tnote">Concentrations, initial rates, titration parameters, maximums and unit restrictions above are transcribed from institutional IV infusion titration and IV therapy administration standards. <strong>Verify against your own current policy.</strong> A prescriber order supersedes any default here.</p>
+</section>
+
+<section id="salvage">
+  <div class="sec-head"><span class="sec-num">08</span><h2>Salvage meds</h2></div>
+  <p class="sec-sub">When escalating catecholamines stops buying pressure, the problem is no longer a dosing problem. It's a pathway problem, and there are drugs for that.</p>
+
+  <h3>Vasoplegic syndrome after bypass</h3>
+  <p>Distributive shock with a <em>preserved or high</em> cardiac output, low SVR, and MAP under 65 despite adequate volume and norepinephrine above 0.25 mcg/kg/min. Incidence runs 5–25%, peaking POD 0–1. The mechanism is bypass-induced, nitric-oxide-mediated vasodilation that simply overrides the catecholamine response — which is why turning the norepi up stops working.</p>
+
+  <div class="call stop">
+    <p class="lbl">Earlier is dramatically better</p>
+    <p>Levin et al. (2009) showed improved mortality when methylene blue was started within <strong>3–4 hours of hypotension onset</strong>. Waiting until profound shock — MAP under 50, lactate over 4, organ failure — significantly worsens outcomes. If you're watching a MAP of 60 trend down on escalating pressors, advocate for methylene blue now. Do not accept "let's optimize fluids and pressors for another hour."</p>
+  </div>
+
+  <h4>The escalation ladder</h4>
+  <ol class="steps">
+    <li><span class="st">Fix the electrolytes</span><span class="sd">K⁺ ≥ 4.0, Mg²⁺ ≥ 2.0. They're Na/K-ATPase cofactors and they gate everything downstream.</span></li>
+    <li><span class="st">Norepinephrine — 8 mg/250 mL</span><span class="sd">Start 0.5 mcg/min, up by 0.5 q3–5 min, ceiling 30 mcg/min. Onset 1–2 min, so it's working while anything else is being prepared. Note the ceiling: past roughly 20 mcg/min you're fighting catecholamine resistance and the next dose buys almost nothing.</span></li>
+    <li><span class="st">Add vasopressin — 40 units/100 mL</span><span class="sd">0.02 units/min, up by 0.01 to a max of 0.04. Different receptor, different pathway, and it keeps working in acidosis. Add it once norepi has plateaued rather than after it has failed.</span></li>
+    <li><span class="st">Methylene blue 1–2 mg/kg</span><span class="sd">1% is an <strong>IV push over several minutes</strong>; ProvayBlue 0.5% is an IVPB over 5–30 min diluted in D5W. <strong>Vesicant — central line preferred.</strong> Onset 15–30 min; expect a 10–20 mmHg MAP rise if given early.</span></li>
+    <li><span class="st">Angiotensin II (Giapreza) — restricted</span><span class="sd">2.5 mg/500 mL <strong>NS only</strong>, central line, ICU. Third-line by policy: the patient must already be on norepinephrine <em>and</em> a second pressor at equivalent dose before it can go up. Start 10–20 ng/kg/min, up by 15 q5 min, max 80 ng/kg/min for the first 3 hours then 40.</span></li>
+    <li><span class="st">Stress-dose hydrocortisone 50 mg q6h</span><span class="sd">Especially if the patient is on chronic steroids at home or the picture looks septic. May be given undiluted, 500 mg or fraction over 1 minute.</span></li>
+  </ol>
+
+  <div class="grid g2">
+    <div class="card">
+      <p class="name">Methylene blue</p><span class="abbr">guanylate cyclase inhibitor</span>
+      <p>Blocks the NO → cGMP → vasodilation cascade at its source rather than trying to out-shout it with more catecholamine. That's why the MAP response is often dramatic when it's given early and gradual when it's late.</p>
+      <p class="watch"><b>Administration</b><strong>Vesicant — central line preferred.</strong> 1% is an IV push over several minutes; ProvayBlue 0.5% is an IVPB over 5–30 min in D5W. Turns urine bright blue-green — <strong>warn the patient, family, and night shift before you give it.</strong> Stains the tubing. Transient false-low SpO₂ on some monitors; check against clinical perfusion.</p>
+    </div>
+    <div class="card">
+      <p class="name">Hydroxocobalamin (Cyanokit)</p><span class="abbr">direct NO scavenger</span>
+      <p>Binds and inactivates NO rather than blocking the pathway. Less studied in cardiac surgery, more familiar from cyanide toxicity, and more expensive — but no serotonin syndrome risk and no G6PD problem.</p>
+      <p class="watch"><b>Nursing notes</b>Turns urine bright red — <strong>warn the patient, family, and night shift, same as you would for methylene blue.</strong> Transient creatinine bump from the pigment, and it interferes with colorimetric lab assays for a period after dosing. No serotonin syndrome risk and no G6PD problem, which is exactly why it exists on the shelf.</p>
+    </div>
+  </div>
+
+  <div class="call watch">
+    <p class="lbl">Before methylene blue — check the MAR</p>
+    <ul>
+      <li><strong>G6PD deficiency</strong> — oxidizes RBCs, causing hemolysis and renal failure. Hydroxocobalamin instead.</li>
+      <li><strong>MAOIs</strong> (phenelzine, tranylcypromine, <em>linezolid</em>) — serotonin syndrome. Hydroxocobalamin instead.</li>
+      <li><strong>High-dose SSRIs</strong> plus other serotonergic agents — rare at standard dosing but reportable. Flag it to the APP.</li>
+      <li><strong>Cr &gt; 3 or eGFR &lt; 15</strong> — may accumulate; consider 0.5–1 mg/kg with ICU-level monitoring.</li>
+      <li><strong>QT prolongation history</strong> — verify an ECG pre-dose if time allows.</li>
+    </ul>
+  </div>
+
+  <div class="call">
+    <p class="lbl">Where this happens</p>
+    <p>Vasoplegia-level support is an ICU problem, not a floor problem. Multiple vasopressors, a continuous arterial line, labs q1–2 h, and methylene blue are ICU infrastructure. If you're escalating beyond simple norepinephrine on a lower-acuity unit, activate the ICU bed rather than trying to titrate through it.</p>
+  </div>
+
+  <h3>When the escalation runs out</h3>
+  <div class="call stop">
+    <p class="lbl">Emergent bedside sternotomy</p>
+    <p>Acute collapse, PEA or asystolic arrest, or massive chest tube bleeding in a post-op cardiac patient: <strong>STAT page CT surgery and activate the open chest code.</strong> Target resternotomy within 5 minutes of arrest onset.</p>
+    <p><strong>Do not start standard external compressions</strong> — they risk graft injury and tamponade rupture. Delay 1–2 minutes to let the team assemble for internal cardiac massage. Activate MTP. Bring the sterile resternotomy tray, bovie, suction, and retractor to the bedside. Mortality is 40–60%; the team debrief afterward is not optional.</p>
+  </div>
+
+  <div class="call stop">
+    <p class="lbl">Emergent ECMO cannulation</p>
+    <p>When post-cardiotomy shock is refractory to everything above — maximal pressors, inotropes, the NO-pathway agents — or when an arrest doesn't resolve, <strong>VA-ECMO is the next step</strong>, cannulated emergently at the bedside or back in the OR.</p>
+    <p><strong>You will not manage the ECMO.</strong> Once cannulated, the patient transfers to the ECMO unit and stays there — they do not come back to this unit. That makes your job the two things on either side of the cannulation: <strong>recognizing it early enough to be useful</strong>, and <strong>handing off well</strong>.</p>
+    <p>Have the picture assembled before the receiving team arrives — every pressor with its dose and the time it was started, the lactate trend rather than the last value, the most recent echo, current labs and coagulation studies, and what has already been tried and failed. They are starting from your handoff, and the difference between a good one and a shrug is real. Survival in post-cardiotomy cardiogenic shock runs roughly 40–50%, which is also worth knowing before a family asks you.</p>
+  </div>
+</section>
+
+<section id="basics">
+  <div class="sec-head"><span class="sec-num">09</span><h2>Electrolytes, rhythm, and hardware</h2></div>
+  <p class="sec-sub">The unglamorous work that prevents most of the calls you'd otherwise be making at 0300.</p>
+
+  <h3>Replacement targets</h3>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Electrolyte</th><th class="n">Goal</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td class="drug" data-label="Electrolyte">Potassium</td><td class="n" data-label="Goal">≥ 4.0 mEq/L</td><td data-label="Notes">Requires an IV pump. <strong>Rate is never to exceed 20 mEq/hr</strong> and max concentration through a central line is 40 mEq/100 mL. Hold in AKI or if already ≥ 5.0 — verify Cr and UOP before dosing.</td></tr>
+        <tr><td class="drug" data-label="Electrolyte">Magnesium</td><td class="n" data-label="Goal">≥ 2.0 mg/dL</td><td data-label="Notes">Replace <em>with</em> potassium — they're Na/K-ATPase cofactors and repleting one without the other underperforms. IV push is <strong>critical care only</strong>, 1 g over 3–5 min through a ≤ 5 micron in-line filter.</td></tr>
+        <tr><td class="drug" data-label="Electrolyte">Phosphorus</td><td class="n" data-label="Goal">≥ 2.5 mg/dL</td><td data-label="Notes">Recheck 1 h after IV, 4 h after PO.</td></tr>
+        <tr><td class="drug" data-label="Electrolyte">Ionized calcium</td><td class="n" data-label="Goal">≥ 1.1 mmol/L</td><td data-label="Notes">Total calcium ≥ 8.4 mg/dL.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Post-op atrial fibrillation</h3>
+  <p>Thirty to forty percent after CABG, forty to fifty percent after mitral surgery, peaking POD 2–3. New irregular rhythm on tele → 12-lead to confirm, <strong>replace K⁺ ≥ 4.0 and Mg²⁺ ≥ 2.0</strong>, then notify the APP for a rate-versus-rhythm plan. Unstable — hypotension, chest pain, altered mental status, pulmonary edema — is a STAT call with pads on for synchronized cardioversion. Anticipate amiodarone hypotension in about 25% and back the drip down early rather than late.</p>
+
+  <h3>Glucose</h3>
+  <p>Post-CPB hyperglycemia is near-universal, insulin-naive patients included — it's the stress and inflammatory response, not undiagnosed diabetes. <strong>Persistent glucose above 180 in the ICU means an insulin drip</strong>, 0.05–0.1 units/kg/hr titrated q1–2h. <strong>Target is 140–180 mg/dL per STS.</strong> Tight control is the wrong instinct here: driving below 110 worsens outcomes rather than improving them.</p>
+  <p>Continuous insulin infusion is <strong>ICU and stepdown only</strong>, run through a computerized IV insulin dosing and monitoring program rather than titrated by hand. Once they're eating, transition to basal-bolus-correctional and overlap the drip 2–4 hours — <strong>never stop a drip and go straight to sliding scale.</strong> Expect afternoon spikes from steroids.</p>
+  <div class="call watch">
+    <p class="lbl">Hypoglycemia on a post-op cardiac patient</p>
+    <p>Under 70 is a Level 1 alert; under 54 with symptoms is clinically important; altered mental status or seizure is emergent. Awake and swallowing: 15–20 g oral glucose, recheck in 15 minutes. Unable to swallow: D50 25 g IV push or glucagon 1 mg IM, recheck q15 min until above 100.</p>
+    <p><strong>Then find the cause</strong> — drip over-titration, a sulfonylurea, AKI slowing insulin clearance, sepsis. And remember the beta-blocker: nearly every patient on this unit is on one, and it masks the adrenergic warning signs. The first thing you may notice is confusion.</p>
+  </div>
+
+  <h3>Hardware you'll manage</h3>
+  <div class="grid g3">
+    <div class="card">
+      <p class="name">Epicardial pacer wires</p>
+      <p>Backup rhythm support, typically 3–5 days, longer after aortic work. Check capture and sensing thresholds every shift. Output at 2–3× capture threshold; sensitivity at ≤ half the intrinsic voltage.</p>
+      <p class="watch"><b>Know before you touch</b>Is this patient pacer-dependent? Loss of capture in someone who is = STAT code response with transcutaneous pads at the bedside. Monitor q15 min × 1 h after removal for late tamponade.</p>
+    </div>
+    <div class="card">
+      <p class="name">Chest tubes</p>
+      <p>Output and character hourly POD 0–1, q2h if stable. System stays below chest level. Tidaling is normal; continuous bubbling is a leak. Removal at &lt; 150 mL/8 h, no air leak × 24 h, serous, stable.</p>
+      <p class="watch"><b>Red flag</b>Sudden cessation of output with a hemodynamic change = tamponade until proven otherwise. STAT echo and call. Gentle milking only; never aggressive stripping.</p>
+    </div>
+    <div class="card">
+      <p class="name">Sternal precautions</p>
+      <p>Six to twelve weeks. No pushing or pulling, no overhead reaching, no driving × 4–6 weeks, cough with pillow splinting. <strong>The lifting limit is the surgeon's call</strong> — generally 5–10 lb after sternotomy, 10 lb after aortic repair. Check the order rather than quoting a number from memory.</p>
+      <p class="watch"><b>Dehiscence red flags</b>Sternal click or pop, grinding, mid-sternal drainage, fever. Most complications land POD 0–3. Mobility within precautions is protective, not risky.</p>
+    </div>
+  </div>
+</section>
+
+<section id="call">
+  <div class="sec-head"><span class="sec-num">10</span><h2>Call now</h2></div>
+  <p class="sec-sub">Findings in a currently stable patient that mean the trajectory has changed. None of these are "watch and see."</p>
+
+  <h3>Who you're calling</h3>
+  <div class="grid g3">
+    <div class="card">
+      <p class="name">The APP first, for most things</p>
+      <p>Rhythm changes, electrolytes, pain, diuresis, an output trend you don't like, a pressor requirement that's creeping. They are the fastest route to an order and they know these patients daily.</p>
+    </div>
+    <div class="card">
+      <p class="name">CT surgery for the chest</p>
+      <p>Bleeding at re-op thresholds, tamponade physiology, sternal instability or drainage, anything involving the graft, the anastomosis, or the wound. <strong>Do not route a surgical problem through a medical consult.</strong></p>
+    </div>
+    <div class="card">
+      <p class="name">Both, plus intensivist, when it's shock</p>
+      <p>Escalating vasopressor requirement, a MAP you cannot hold, new neuro deficit, arrest. Page in parallel rather than in sequence — the packet's worst-case sections all assume the team assembles at once.</p>
+    </div>
+  </div>
+  <p class="tnote">Escalate on a trend, not a threshold. "Norepinephrine has doubled since midnight and the lactate is up" is a better call than waiting for the MAP to break 65.</p>
+
+  <div class="grid g2">
+    <div class="card">
+      <p class="name">Neurologic</p>
+      <ul style="font-size:14px;margin:4px 0 0">
+        <li>Any new focal deficit, any time — stroke code, and get the last-normal time.</li>
+        <li>New or worsening hoarseness — RLN injury; swallow eval before diet advances.</li>
+        <li>Weak cough with dyspnea — aspiration risk climbing.</li>
+        <li>New lower-extremity weakness with a CSF drain in — STAT call, raise the MAP goal, check drain patency.</li>
+        <li>Increasingly anxious, restless, or unexpectedly drowsy — subtle mental status change often precedes hemodynamic collapse. Don't file it under delirium.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="name">Hemodynamic</p>
+      <ul style="font-size:14px;margin:4px 0 0">
+        <li>SBP trending ≥ 130 after arch or dissection repair despite regimen escalation — anastomotic rupture risk. "Close enough" isn't.</li>
+        <li>SBP dropping acutely (120 → 90) in the early hours — watershed stroke risk from overshoot.</li>
+        <li>Rising lactate, falling UOP, cool extremities <em>despite</em> an adequate BP — perfusion failure.</li>
+        <li>Escalating vasopressor requirement POD 2–3 after a long pump run — vasoplegia persisting; discuss ICU re-transfer early.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="name">Bleeding &amp; tamponade</p>
+      <ul style="font-size:14px;margin:4px 0 0">
+        <li>Chest tube output not trending down after POD 1, or rising again POD 2+.</li>
+        <li>Sudden drop in output with rising CVP or JVD and hypotension — tamponade physiology. STAT echo.</li>
+        <li>Post-Bentall chest pain POD 0–2 — coronary button ischemia. ECG, troponin, OR standby.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="name">Rhythm &amp; infection</p>
+      <ul style="font-size:14px;margin:4px 0 0">
+        <li>New bradycardia under 55 with symptoms — delayed complete heart block; prepare transcutaneous pacing.</li>
+        <li>Pacer capture threshold rising — early warning of loss of capture.</li>
+        <li>QTc approaching 500 ms on amiodarone — torsades risk.</li>
+        <li>Sternal instability with fever — DSWI. Cultures before antibiotics, CT surgery STAT.</li>
+        <li>Persistent fever POD 2+ without a source in a graft patient — consider graft infection. Blood cultures ×2, CTA, ID and CT surgery.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="rulepair"><span>Nursing Professional Development</span></div>
+  <p><strong>This is an on-ramp, not a reference.</strong> Every section here compresses a much larger body of material into what fits in a first read. When a patient in front of you raises a question this page only gestures at, the answer is the policy, the order set, or a person — your charge nurse, the APP, or your unit educator. Corrections and gaps are welcome and wanted; this is a living document.</p>
+  <p style="margin-top:14px"><strong>Reference.</strong> Cai Y, Mack A, Ladlie BL, Martin AK. The use of intravenous hydroxocobalamin as a rescue in methylene blue-resistant vasoplegic syndrome in cardiac surgery. <em>Ann Card Anaesth.</em> 2017;20(4):462–464.</p>
+  <p style="margin-top:14px"><strong>Sourcing.</strong> Clinical content follows a source precedence of institutional policy → society guidelines (ACC/AHA, STS, Surviving Sepsis) → Kirklin &amp; Blackstone, Bojar, Hardin &amp; Kaplow → primary literature. <strong>All drip concentrations, initial rates, titration parameters, maximums and unit restrictions are transcribed from institutional IV infusion titration and IV therapy administration standards</strong> and are reproduced here as a worked example of how such a policy reads — not as a universal standard.</p>
+  <p style="margin-top:14px"><strong>Before you use any number on this page:</strong> titration defaults apply only where a prescriber has not specified otherwise. <strong>A patient-specific order supersedes everything here, and your own institution's current policy supersedes this page entirely.</strong> Standard concentrations, maximum doses and unit restrictions vary between institutions — confirm each against your own pharmacy chart and policy system before relying on it at the bedside.</p>
+  <p style="margin-top:14px"><strong>§02, The first hour</strong>, is assembled from arrival, line, drain, pacing and rewarming guidance that lives in several different places rather than one post-operative handoff standard. It is the section most in need of your eyes — if the sequence on this unit differs from what is written here, that difference is the correction, not the exception.</p>
+</footer>
+
+</div>
+</body>
+</html>
