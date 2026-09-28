@@ -254,6 +254,15 @@ h1{font-size:clamp(28px,4.4vw,40px);max-width:20ch}
 section{padding-top:34px}
 .toc{box-shadow:0 6px 14px -12px rgba(0,0,0,.35)}
 @media (max-width:900px){.masthead{padding:20px 0 16px}.grid{gap:12px}}
+.xref{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+.xref:hover{color:var(--accent-deep)}
+.abbr-legend{margin:44px 0 0;padding:16px 20px;background:var(--surface);border:1px solid var(--rule);border-radius:10px;scroll-margin-top:72px}
+.abbr-legend summary{cursor:pointer;font-weight:600;color:var(--ink)}
+.abbr-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px 28px;margin:16px 0 4px}
+.abbr-list>div{display:flex;gap:12px;font-size:14px;line-height:1.4}
+.abbr-list dt{flex:0 0 74px;font-family:var(--mono);font-weight:600;color:var(--accent-deep)}
+.abbr-list dd{margin:0;color:var(--ink-soft)}
+.abbr-note{font-size:13px;color:var(--ink-faint);margin:10px 0 0}
 </style>
 </head>
 <body>
@@ -287,6 +296,7 @@ if(t==='dark'){r.setAttribute('data-theme','dark');}else if(t==='auto'){r.remove
     <a href="#salvage">Salvage meds</a>
     <a href="#basics">Electrolytes &amp; rhythm</a>
     <a href="#call">Call now</a>
+    <a href="#abbreviations">Abbreviations</a>
   </div>
 </nav>
 
@@ -320,8 +330,8 @@ if(t==='dark'){r.setAttribute('data-theme','dark');}else if(t==='auto'){r.remove
     </div>
     <div class="card">
       <p class="name">Epicardial pacer wires</p>
-      <p>Atrial, ventricular, or both. They are the backup rhythm for the next several days.</p>
-      <p class="watch"><b>Do first</b>Establish capture and sensing thresholds and <strong>find out whether this patient is pacer-dependent</strong> before you need to know.</p>
+      <p>Atrial and ventricular wires are placed in most cases; either can fail independently. They are the backup rhythm for the next several days.</p>
+      <p class="watch"><b>Do first</b>Check capture and sensing thresholds on both. If the patient is already bradycardic, asystolic, or being paced, that’s your answer on dependency — the wires just have to work.</p>
     </div>
   </div>
 
@@ -329,7 +339,7 @@ if(t==='dark'){r.setAttribute('data-theme','dark');}else if(t==='auto'){r.remove
   <p>Anesthesia and perfusion know things about the next twelve hours that are not written anywhere yet. Ask for them before the team scatters.</p>
   <ul>
     <li><strong>Pump time, cross-clamp time, and — for arch cases — circulatory arrest time.</strong> Long runs predict coagulopathy, vasoplegia, and a slower wake-up. This is your single best predictor of how the night goes.</li>
-    <li><strong>What came off the table.</strong> The exact operation, not the scheduled one. Plans change intraoperatively, and the hemodynamic targets in §04 hinge on which one actually happened.</li>
+    <li><strong>What came off the table.</strong> The exact operation, not the scheduled one. Plans change intraoperatively, and the hemodynamic targets in <a class="xref" href="#goals">Section 4</a> hinge on which one actually happened.</li>
     <li><strong>Blood products given, and whether they are still bleeding.</strong> Surgical bleeding and coagulopathic bleeding look identical in the canister and are managed completely differently.</li>
     <li><strong>Rhythm and pacing.</strong> Underlying rhythm, whether they are being paced, and at what settings.</li>
     <li><strong>Anything that surprised the surgeon.</strong> A difficult wean from bypass, a friable aorta, a coronary that did not look right — this is the sentence that explains everything that happens at 0300.</li>
@@ -337,18 +347,18 @@ if(t==='dark'){r.setAttribute('data-theme','dark');}else if(t==='auto'){r.remove
 
   <h4>The first sixty minutes</h4>
   <ol class="steps">
-    <li><span class="st">Confirm every drip against the order and the concentration</span><span class="sd">Not just the rate, and not from memory. Concentrations are in §07 — an infusion that transferred from another pump or another unit is where the errors live.</span></li>
+    <li><span class="st">Confirm every drip against the order and the concentration</span><span class="sd">Not just the rate, and not from memory. Concentrations are in <a class="xref" href="#drips">Section 7, What's hanging</a> — an infusion that transferred from another pump or another unit is where the errors live.</span></li>
     <li><span class="st">Labs and films</span><span class="sd">CBC, CMP, coagulation panel, ABG with lactate, and troponin. Twelve-lead ECG. Portable chest film to verify tube and line position.</span></li>
-    <li><span class="st">Set the target for <em>this</em> operation</span><span class="sd">Before you titrate anything, know whether you are protecting a graft at SBP ≤ 140 or a fresh anastomosis at SBP ≤ 120 — and, after a myectomy or TAAA, whether the usual rules are inverted. §04 has the table.</span></li>
+    <li><span class="st">Set the target for <em>this</em> operation</span><span class="sd">Before you titrate anything, know whether you are protecting a graft at SBP ≤ 140 or a fresh anastomosis at SBP ≤ 120 — and, after a myectomy or TAAA, whether the usual rules are inverted. <a class="xref" href="#goals">Section 4</a> has the table.</span></li>
     <li><span class="st">Rewarm, and expect the coagulopathy to follow</span><span class="sd">Core to 36–37 °C, gradually. Platelet function improves above 34 °C, so some early oozing resolves on its own as the patient warms. Rapid rewarming buys an overshoot you will then have to treat.</span></li>
-    <li><span class="st">Trend the chest tube, don't just read it</span><span class="sd">Output q15–30 min with the time written down. A single number means nothing; the slope is the finding. Re-op thresholds are in §06.</span></li>
-    <li><span class="st">Start thinking about extubation</span><span class="sd">Goal is 4–6 h for a routine CABG or valve, POD 1–2 after arch work. Sedation that drifts long is the most common reason it slips.</span></li>
+    <li><span class="st">Trend the chest tube, don't just read it</span><span class="sd">Output q15–30 min with the time written down. A single number means nothing; the slope is the finding. Re-op thresholds vary by procedure — verify against your unit’s current order set. The figures in <a class="xref" href="#arch">Section 6</a> are arch-specific and run higher than a standard CABG or valve.</span></li>
+    <li><span class="st">Start thinking about extubation</span><span class="sd">Goal is 4–6 h for a routine CABG or valve, POD 1–2 after arch work. When extubation runs late, the most common cause is sedation that ran longer than planned.</span></li>
   </ol>
 
   <div class="call stop">
     <p class="lbl">Two things that should stop the routine</p>
     <p><strong>Chest tube output that suddenly stops</strong> in a patient who was draining — paired with a rising CVP, distended neck veins, or a falling pressure — is tamponade until an echo says otherwise. The tube did not "finish." It clotted.</p>
-    <p><strong>Hemodynamic collapse in the first hours</strong> does not get standard compressions. Emergent resternotomy at the bedside is the intervention, and §08 has the sequence. Know where the tray is before your first shift, not during it.</p>
+    <p><strong>Hemodynamic collapse in the first hours</strong> does not get standard compressions. Emergent resternotomy at the bedside is the intervention, and <a class="xref" href="#salvage">Section 8</a> has the sequence. Know where the tray is before your first shift, not during it.</p>
   </div>
 </section>
 
@@ -361,7 +371,7 @@ if(t==='dark'){r.setAttribute('data-theme','dark');}else if(t==='auto'){r.remove
     <div class="card">
       <p class="name">Coronary Artery Bypass Grafting</p><span class="abbr">CABG · on-pump or OPCAB</span>
       <p>Arrives POD 0 intubated, extubation goal 4–6 h. <strong>Find out which conduits they used</strong> — LIMA-to-LAD drives long-term survival, and a radial artery changes what hangs.</p>
-      <p class="watch"><b>Watch</b>Bleeding (re-op thresholds), POAF at 30–40% peaking POD 2–3, MAP ≥ 70, UOP &gt; 0.5 mL/kg/h.</p>
+      <p class="watch"><b>Watch</b>Bleeding (re-op thresholds), post-operative atrial fibrillation (POAF) at 30–40% peaking POD 2–3, MAP ≥ 70, UOP &gt; 0.5 mL/kg/h.</p>
       <p class="watch"><b>Conduits</b><strong>Radial artery spasms</strong> — expect a vasodilator early and an oral calcium channel blocker at discharge. IMA can spasm, less readily. <strong>Saphenous vein does not spasm</strong>; no vasodilator is needed to protect it.</p>
     </div>
     <div class="card">
@@ -1027,15 +1037,75 @@ if(t==='dark'){r.setAttribute('data-theme','dark');}else if(t==='auto'){r.remove
   </div>
 </section>
 
+<details class="abbr-legend" id="abbreviations">
+  <summary>Abbreviations used on this page (52)</summary>
+  <dl class="abbr-list">
+    <div><dt>AC</dt><dd>Anticoagulation</dd></div>
+    <div><dt>ACP</dt><dd>Antegrade cerebral perfusion</dd></div>
+    <div><dt>AF</dt><dd>Atrial fibrillation</dd></div>
+    <div><dt>AKI</dt><dd>Acute kidney injury</dd></div>
+    <div><dt>ASA</dt><dd>Aspirin</dd></div>
+    <div><dt>AVR</dt><dd>Aortic valve replacement</dd></div>
+    <div><dt>CHB</dt><dd>Complete heart block</dd></div>
+    <div><dt>CPB</dt><dd>Cardiopulmonary bypass</dd></div>
+    <div><dt>CSF</dt><dd>Cerebrospinal fluid</dd></div>
+    <div><dt>CT</dt><dd>Cardiothoracic, as in “CT surgery” — except in “CT angiography,” where it means computed tomography</dd></div>
+    <div><dt>CTA</dt><dd>CT angiography</dd></div>
+    <div><dt>DAPT</dt><dd>Dual antiplatelet therapy</dd></div>
+    <div><dt>DCCV</dt><dd>Direct current cardioversion</dd></div>
+    <div><dt>DHCA</dt><dd>Deep hypothermic circulatory arrest</dd></div>
+    <div><dt>DSWI</dt><dd>Deep sternal wound infection</dd></div>
+    <div><dt>ECMO</dt><dd>Extracorporeal membrane oxygenation</dd></div>
+    <div><dt>FET</dt><dd>Frozen elephant trunk</dd></div>
+    <div><dt>G6PD</dt><dd>Glucose-6-phosphate dehydrogenase (a deficiency that changes methylene blue risk)</dd></div>
+    <div><dt>HCM</dt><dd>Hypertrophic cardiomyopathy</dd></div>
+    <div><dt>HIT</dt><dd>Heparin-induced thrombocytopenia</dd></div>
+    <div><dt>ID</dt><dd>Infectious disease (consult)</dd></div>
+    <div><dt>IMA</dt><dd>Internal mammary artery</dd></div>
+    <div><dt>IVPB</dt><dd>IV piggyback</dd></div>
+    <div><dt>LAA</dt><dd>Left atrial appendage</dd></div>
+    <div><dt>LAD</dt><dd>Left anterior descending (coronary artery)</dd></div>
+    <div><dt>LBBB</dt><dd>Left bundle branch block</dd></div>
+    <div><dt>LIMA</dt><dd>Left internal mammary artery</dd></div>
+    <div><dt>LVOT</dt><dd>Left ventricular outflow tract</dd></div>
+    <div><dt>MAZE</dt><dd>Cox-MAZE — the name of a surgical AF-ablation procedure, not an acronym</dd></div>
+    <div><dt>MTP</dt><dd>Massive transfusion protocol</dd></div>
+    <div><dt>MV</dt><dd>Mitral valve</dd></div>
+    <div><dt>OPCAB</dt><dd>Off-pump coronary artery bypass</dd></div>
+    <div><dt>PCWP</dt><dd>Pulmonary capillary wedge pressure</dd></div>
+    <div><dt>POAF</dt><dd>Post-operative atrial fibrillation</dd></div>
+    <div><dt>POD</dt><dd>Post-operative day</dd></div>
+    <div><dt>PPM</dt><dd>Permanent pacemaker</dd></div>
+    <div><dt>PVC</dt><dd>Polyvinyl chloride — the tubing/container material here, not the cardiac rhythm</dd></div>
+    <div><dt>QT</dt><dd>QT interval (ECG)</dd></div>
+    <div><dt>RF</dt><dd>Radiofrequency (ablation)</dd></div>
+    <div><dt>RLN</dt><dd>Recurrent laryngeal nerve</dd></div>
+    <div><dt>RV</dt><dd>Right ventricle</dd></div>
+    <div><dt>SAM</dt><dd>Systolic anterior motion (of the mitral valve)</dd></div>
+    <div><dt>SD</dt><dd>Step-down unit</dd></div>
+    <div><dt>STS</dt><dd>Society of Thoracic Surgeons</dd></div>
+    <div><dt>SVR</dt><dd>Systemic vascular resistance</dd></div>
+    <div><dt>TAAA</dt><dd>Thoracoabdominal aortic aneurysm</dd></div>
+    <div><dt>TAVR</dt><dd>Transcatheter aortic valve replacement</dd></div>
+    <div><dt>TEVAR</dt><dd>Thoracic endovascular aortic repair</dd></div>
+    <div><dt>TM</dt><dd>Telemetry unit</dd></div>
+    <div><dt>TV</dt><dd>Tricuspid valve</dd></div>
+    <div><dt>VA-ECMO</dt><dd>Venoarterial ECMO — drains venous blood and returns it to an artery, supporting heart and lungs together</dd></div>
+    <div><dt>VSARR</dt><dd>Valve-sparing aortic root replacement</dd></div>
+  </dl>
+  <p class="abbr-note">Covers cardiothoracic-specific abbreviations. General ICU vocabulary (MAP, HR, CVP, and the like) is assumed. Several operation names are already spelled out next to their abbreviation in Section 3, The board.</p>
+</details>
+
 <footer>
   <div class="rulepair"><span>Nursing Professional Development</span></div>
   <p><strong>This is an on-ramp, not a reference.</strong> Every section here compresses a much larger body of material into what fits in a first read. When a patient in front of you raises a question this page only gestures at, the answer is the policy, the order set, or a person — your charge nurse, the APP, or your unit educator. Corrections and gaps are welcome and wanted; this is a living document.</p>
   <p style="margin-top:14px"><strong>Reference.</strong> Cai Y, Mack A, Ladlie BL, Martin AK. The use of intravenous hydroxocobalamin as a rescue in methylene blue-resistant vasoplegic syndrome in cardiac surgery. <em>Ann Card Anaesth.</em> 2017;20(4):462–464.</p>
   <p style="margin-top:14px"><strong>Sourcing.</strong> Clinical content follows a source precedence of institutional policy → society guidelines (ACC/AHA, STS, Surviving Sepsis) → Kirklin &amp; Blackstone, Bojar, Hardin &amp; Kaplow → primary literature. <strong>All drip concentrations, initial rates, titration parameters, maximums and unit restrictions are transcribed from institutional IV infusion titration and IV therapy administration standards</strong> and are reproduced here as a worked example of how such a policy reads — not as a universal standard.</p>
   <p style="margin-top:14px"><strong>Before you use any number on this page:</strong> titration defaults apply only where a prescriber has not specified otherwise. <strong>A patient-specific order supersedes everything here, and your own institution's current policy supersedes this page entirely.</strong> Standard concentrations, maximum doses and unit restrictions vary between institutions — confirm each against your own pharmacy chart and policy system before relying on it at the bedside.</p>
-  <p style="margin-top:14px"><strong>§02, The first hour</strong>, is assembled from arrival, line, drain, pacing and rewarming guidance that lives in several different places rather than one post-operative handoff standard. It is the section most in need of your eyes — if the sequence on this unit differs from what is written here, that difference is the correction, not the exception.</p>
+  <p style="margin-top:14px"><strong>Section 2, The first hour</strong>, is assembled from arrival, line, drain, pacing and rewarming guidance that lives in several different places rather than one post-operative handoff standard. It is the section most in need of your eyes — if the sequence on this unit differs from what is written here, that difference is the correction, not the exception.</p>
 </footer>
 
 </div>
+<script>(function(){function o(){var d=document.getElementById('abbreviations');if(d&&location.hash==='#abbreviations')d.open=true}addEventListener('hashchange',o);o()})();</script>
 </body>
 </html>
